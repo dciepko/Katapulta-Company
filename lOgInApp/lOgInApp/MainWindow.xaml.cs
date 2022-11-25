@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace lOgInApp
+namespace LogInAp
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,6 +23,22 @@ namespace lOgInApp
         public MainWindow()
         {
             InitializeComponent();
+        }
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (pass.Password == "test" && user.Text == "user")
+            {
+                MessageBox.Show("Success!", "");
+            }
+            else
+            {
+                MessageBox.Show("unaccteable username or password");
+            }
         }
     }
 }
