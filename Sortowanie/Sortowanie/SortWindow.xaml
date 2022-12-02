@@ -26,5 +26,12 @@
             </Grid>
             
         </Grid>
+        <Grid Grid.Column="1">
+            <Image>
+                <Image.Source>
+                    <BitmapImage UriSource="sort.jpg"/>
+                </Image.Source>
+            </Image>
+        </Grid>
     </Grid>
 </Window>
