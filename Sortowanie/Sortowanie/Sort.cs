@@ -14,7 +14,7 @@ namespace Sortowanie
                 int temp = arrayToSort[i];
                 int j = i - 1;
 
-                while (j > 0 && arrayToSort[j] > temp)
+                while (j >= 0 && arrayToSort[j] > temp)
                 {
                     arrayToSort[j + 1] = arrayToSort[j];
                     j--;

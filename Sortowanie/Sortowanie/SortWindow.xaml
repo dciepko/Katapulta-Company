@@ -17,10 +17,14 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="350"/>
-            <Button Content="Sortuj" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,150,0,0"/>
-
-
+            <Grid Grid.Row="0">
+                <TextBox Name="Input" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="350"/>
+                <Button Content="Sortuj" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,150,0,0" Click="Button_Click"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <TextBox Name="Output" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="350"/>
+            </Grid>
+            
         </Grid>
     </Grid>
 </Window>
